@@ -55,6 +55,22 @@ secondEditBtn.addEventListener('click', function() {
 let navBar = document.getElementsByTagName('header')[0];
 console.log(navBar)
 var linkBootstrap = document.getElementsByTagName('link')[0];
-navBar.addEventListener('dblclick', function(linkBootstrap) { linkBootstrap.preventDefault;} 
+navBar.addEventListener('dblclick', function() {
+  if (linkBootstrap.hasAttribute('href') == true) {
+    linkBootstrap.removeAttribute('href')}
+  else {
+  linkBootstrap.setAttribute('href','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  };
+}
 );
 
+
+// ********** Fonctionnalité 6:
+
+
+let allCards = document.getElementsByClassName('card mb-4 box-shadow')[3];
+let viewBtn = document.getElementsByClassName('btn btn-sm btn-success')[3];
+viewBtn.addEventListener('mousemove', function (){
+  if ()
+
+})
